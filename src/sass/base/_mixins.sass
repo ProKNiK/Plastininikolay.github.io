@@ -1,0 +1,26 @@
+@mixin before_element
+    &::before
+        content: ''
+        width: 45px
+        height: 30px
+        background-image: url('../../icons/lattice.svg')
+        position: absolute
+        z-index: -1
+        top: -10%
+@mixin before_element_min
+    &::before
+        content: ''
+        width: 27px
+        height: 30px
+        background-image: url('../../icons/lattice_min.svg')
+        position: absolute
+        z-index: -1
+        top: -1%
+.subtitle
+        position: relative
+        z-index: 2
+        @include before_element
+.subtitle_min
+        position: relative
+        z-index: 2
+        @include before_element_min

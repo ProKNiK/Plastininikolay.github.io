@@ -85,11 +85,10 @@
         <div class="container">
             <div class="aboutme__wrapper">
                 <div class="aboutme__photo">
-                <img srcset="img/main_photo_phone.jpg 324w,
-                            img/main_photo.jpg 366w"
-                sizes="(max-width: 768px) 280px,
-                        (min-width: 769px) 366px"
-                        src="img/main_photo.jpg" alt="">                
+                        <picture>
+                            <source srcset="img/main_photo_phone.jpg" media="(max-width: 768px)">
+                            <img src="img/main_photo.jpg" alt="MDN">
+                           </picture>               
             </div>
                 <div class="aboutme__descr">
                     <h2 class="title title__fz18 subtitle">Про меня</h2>

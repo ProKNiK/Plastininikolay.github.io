@@ -1,0 +1,22 @@
+.menu
+    display: none
+.changelanguage
+    position: fixed
+    top: 30px
+    right: 40px
+    width: 95px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    color: $main-color
+    font-size: 20px
+    line-height: 40px
+    background-color: $white-color
+    border-radius: 10px
+    &__active
+        color: $second-color
+        pointer-events: none
+    &__RU, &__EN
+        &:hover
+            color: $second-color
+            text-decoration: none
